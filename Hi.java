@@ -1,5 +1,4 @@
-package example;
-public class Hi{
+public class Hi {
     private int x;
     private int y;
     private int z;
@@ -10,17 +9,16 @@ public class Hi{
         this.z = z;
     }
 
-    public boolean eqls_two(Hi other, Hi other2) {
-        if (other.equals(other2)) {
+    public boolean equals(Hi other) {
+        if (other.x == this.x) {
             return true;
         } else {
             return false;
         }
     }
 
-    public String to_string(Hi other){
-        String str_other = other.x + "/" + other.y + "/" + other.z;
-        return str_other;
+    public String toString() {
+        return this.x + "/" + this.y + "/" + this.z;
     }
 
     public boolean is_before(Hi other, Hi other2) {
